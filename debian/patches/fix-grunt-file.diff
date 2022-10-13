@@ -1,0 +1,34 @@
+Description: Enable only test in Gruntfile.js
+Author: Xavier Guimard <yadd@debian.org>
+Forwarded: not-needed
+Last-Update: 2019-09-20
+
+--- a/Gruntfile.js
++++ b/Gruntfile.js
+@@ -3,12 +3,6 @@
+ module.exports = function(grunt) {
+ 
+   grunt.initConfig({
+-    jshint: {
+-      options: {
+-        jshintrc: '.jshintrc',
+-      },
+-      all: ['*.js', 'test/*.js'],
+-    },
+     nodeunit: {
+       util: ['test/index.js']
+     },
+@@ -20,11 +14,8 @@
+     },
+   });
+ 
+-  grunt.loadNpmTasks('grunt-contrib-jshint');
+   grunt.loadNpmTasks('grunt-contrib-nodeunit');
+-  grunt.loadNpmTasks('grunt-contrib-watch');
+-
+-  grunt.registerTask('test', ['jshint', 'nodeunit']);
+-  grunt.registerTask('default', ['test', 'watch']);
++  grunt.registerTask('test', ['nodeunit']);
++  grunt.registerTask('default', ['test']);
+ 
+ };

@@ -1,0 +1,36 @@
+node-grunt-legacy-log-utils (1.0.0-4) unstable; urgency=medium
+
+  [ Debian Janitor ]
+  * Bump debhelper from old 12 to 13.
+  * Update standards version to 4.5.1, no changes needed.
+
+ -- Jelmer Vernooĳ <jelmer@debian.org>  Sun, 19 Sep 2021 14:14:19 +0100
+
+node-grunt-legacy-log-utils (1.0.0-3) unstable; urgency=medium
+
+  [ Debian Janitor ]
+  * Set upstream metadata fields: Bug-Submit.
+  * Update standards version to 4.4.1, no changes needed.
+
+ -- Jelmer Vernooĳ <jelmer@debian.org>  Sun, 29 Aug 2021 00:13:34 +0100
+
+node-grunt-legacy-log-utils (1.0.0-2) unstable; urgency=medium
+
+  * Team upload
+  * Bump debhelper compatibility level to 12
+  * Declare compliance with policy 4.4.0
+  * Change section to javascript
+  * Add debian/gbp.conf
+  * Add upstream/metadata
+  * Drop unneeded version constraints from (build) dependencies
+  * Switch install and minimal test to pkg-js-tools (fixes debci)
+  * Update homepage
+  * Enable upstream test
+
+ -- Xavier Guimard <yadd@debian.org>  Fri, 20 Sep 2019 04:00:00 +0200
+
+node-grunt-legacy-log-utils (1.0.0-1) unstable; urgency=low
+
+  * Initial release (Closes: #841485)
+
+ -- Sruthi Chandran <srud@disroot.org>  Fri, 11 Nov 2016 12:10:43 +0530

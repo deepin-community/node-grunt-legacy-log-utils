@@ -1,0 +1,28 @@
+Source: node-grunt-legacy-log-utils
+Maintainer: Debian Javascript Maintainers <pkg-javascript-devel@lists.alioth.debian.org>
+Uploaders: Sruthi Chandran <srud@disroot.org>
+Section: javascript
+Testsuite: autopkgtest-pkg-nodejs
+Priority: optional
+Build-Depends:
+ debhelper-compat (= 13)
+ , grunt <!nocheck>
+ , nodejs
+ , node-chalk <!nocheck>
+ , node-lodash <!nocheck>
+ , node-grunt-contrib-nodeunit <!nocheck>
+ , pkg-js-tools (>= 0.9.12~)
+Standards-Version: 4.5.1
+Vcs-Browser: https://salsa.debian.org/js-team/node-grunt-legacy-log-utils
+Vcs-Git: https://salsa.debian.org/js-team/node-grunt-legacy-log-utils.git
+Homepage: https://gruntjs.com/
+
+Package: node-grunt-legacy-log-utils
+Architecture: all
+Depends:
+ ${misc:Depends}
+ , nodejs
+ , node-chalk
+ , node-lodash
+Description: Static methods for the Grunt 0.4.x logger
+ Node.js is an event-based server-side JavaScript engine.
