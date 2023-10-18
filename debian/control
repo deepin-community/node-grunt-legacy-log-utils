@@ -6,22 +6,21 @@ Testsuite: autopkgtest-pkg-nodejs
 Priority: optional
 Build-Depends:
  debhelper-compat (= 13)
+ , dh-sequence-nodejs
  , grunt <!nocheck>
- , nodejs
  , node-chalk <!nocheck>
  , node-lodash <!nocheck>
  , node-grunt-contrib-nodeunit <!nocheck>
- , pkg-js-tools (>= 0.9.12~)
-Standards-Version: 4.5.1
+Standards-Version: 4.6.0
 Vcs-Browser: https://salsa.debian.org/js-team/node-grunt-legacy-log-utils
 Vcs-Git: https://salsa.debian.org/js-team/node-grunt-legacy-log-utils.git
 Homepage: https://gruntjs.com/
+Rules-Requires-Root: no
 
 Package: node-grunt-legacy-log-utils
 Architecture: all
 Depends:
  ${misc:Depends}
- , nodejs
  , node-chalk
  , node-lodash
 Description: Static methods for the Grunt 0.4.x logger
